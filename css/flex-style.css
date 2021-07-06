@@ -8,7 +8,17 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+a, nav, header, section, div, p, ul {
+    /* giving everything a border */
+    border: 1px solid  brown;
+}
+
 header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
     display: flex;
     flex-direction: row;
 }
