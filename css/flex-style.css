@@ -10,12 +10,14 @@ body {
 
 a, nav, header, section, div, p, ul {
     /* giving everything a border */
-    border: 1px solid  brown;
+    border: 1px solid grey;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav {
@@ -23,9 +25,20 @@ nav {
     flex-direction: row;
 }
 
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
 .hero-text {
     display: flex;
     flex-direction: column;
+}
+
+.hero-text p {
+    font-family: 'Faustina', serif;
 }
 
 .projects {
@@ -41,4 +54,11 @@ nav {
 .project-even {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.projectTeaserText .tags ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
 }
