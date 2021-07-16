@@ -8,56 +8,57 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-nav, header, section, div, p, ul {
+a, nav, header, section, div, p, ul {
     /* giving everything a border */
-    /* border: 1px solid  brown; */
+    border: 1px solid grey;
 }
 
-.inline-block {
-    /* border for the above element for visibiliy */
-    /* border: 1px solid cyan;  */
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo {
-    width: 22%;
-    padding: 1%;
-    text-align: right;
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav {
-    width: 72%;
-    padding: 1%;
+    display: flex;
+    flex-direction: row;
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
+header nav ul {
+    display: flex;
     list-style-type: none;
-    padding: 0px;
-}
-
-li {
-    display: inline-block;
-}
+    margin: 0;
+    padding: 0;
+} 
 
 .hero-text {
-    height: 600px;
-    padding: 25px;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
-#heroName {
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
+.hero-text p {
+    font-family: 'Faustina', serif;
 }
 
-button {
-    background-color: black;
-    padding: 10px 20px 10px 20px;
-    color: white;
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-odd {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.projectTeaserText ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
 }
